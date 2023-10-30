@@ -1,0 +1,21 @@
+% !TEX root = mgcv.tex
+
+\begin{block}{Getting Help}
+  
+  \blocksubtitle{What is \mgcv?}
+\mgcv is an R package for fitting generalized additive models (GAMs). That means we can fit models where the predictors are smooth functions of the covariates. Often these smooth functions are splines, but that's not all they can be.\br
+\end{block}
+
+\begin{block}{The main functions in \mgcv}
+  \inline{gam}\\For fitting GAMs\br
+  \inline{gamm}\\For fitting generalized additive mixed models. Can include correlation structures and performance can be better for random effects. You can specify random effects using \texttt{lme} syntax.\br
+  \inline{bam}\\For fitting big additive models. Includes some special tricks for fitting to large datasets.\br
+  \inline{ginla}\\For fitting using a general integrated nested Laplace approximation (like \texttt{R-INLA}).
+\end{block}
+
+\begin{block}{Useful references}
+Wood. Generalized Additive Models. An Introduction with R. 2nd ed. CRC Press, 2017 \br
+
+Pedersen, Miller, Simpson and Ross. Hierarchical Generalized Additive Models in Ecology: An Introduction with \mgcv. PeerJ (2019). \url{https://doi.org/10.7717/peerj.6876}
+
+\end{block}
