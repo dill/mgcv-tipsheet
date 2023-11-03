@@ -1,16 +1,18 @@
 % !TEX root = mgcv.tex
 
-\begin{block}{Something}
-  \begin{subblock}{Fitting criterion \texttt{method=}}
-    \renewcommand{\arraystretch}{1.411}\hspace{-17.5pt}
-    \begin{tabular}{>{\centering}m{0.26\linewidth} >{\centering\arraybackslash}m{0.70\linewidth}}
-      \inlc{"GCV.Cp"} & Generalized cross validation, default\\
-      \inlc{"REML"} & REstricted Maximum Likelihood, preferred\\
-      \inlc{"ML"} & Maximum Likelihood\\
-      \inlc{"NCV"} & Neighbourhood Cross-Validation\\
-    \end{tabular}
-    \vskip-1ex
-  \end{subblock}
+
+\begin{block}{Knots and basis complexity}
+  General strategy: check \texttt{k} and double if too small.\\
+  When do we know \texttt{k} is too small?
 \end{block}
 
-
+\begin{block}{Fitting criterion \texttt{method=}}
+  \renewcommand{\arraystretch}{1.411}\hspace{-17.5pt}
+  \begin{tabular}{>{\centering}m{0.26\linewidth} >{\centering\arraybackslash}m{0.70\linewidth}}
+    \inlc{"GCV.Cp"} & Generalized cross validation, default\\
+    \inlc{"REML"} & REstricted Maximum Likelihood, preferred\\
+    \inlc{"ML"} & Maximum Likelihood\\
+    \inlc{"NCV"} & Neighbourhood Cross-Validation\\
+  \end{tabular}
+  \vskip-1ex
+\end{block}

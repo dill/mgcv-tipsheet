@@ -2,8 +2,12 @@
 
 \begin{block}{Model checking}
   \begin{subblock}{\texttt{gam.check}}
-  \end{subblock}
-  \begin{subblock}{Knots and basis complexity}
+      \includegraphics[width=\textwidth]{gamcheck.pdf}
+    \begin{itemize}
+      \item Top left: Quantile-quantile plot: points should be close to the line, meaning residuals are normally distributed.
+      \item Bottom left: Histogram of residuals: again, looking for normal(ish) distribution.
+      \item Top right: Residuals vs. linear predictor: looking for no increase or decrease in spread with increasing linear predictor value, otherwise we have heteroskedasticity.
+      \item Bottom right: Response vs. linear predictor, expecting tight line relationship indicating good agreement between the predictions and data.
+    \end{itemize}
   \end{subblock}
 \end{block}
-
