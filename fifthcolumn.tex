@@ -7,30 +7,15 @@
 
         \begin{exampleblock}{Example}
           \begin{Rbg}
-> gam.check(b)
-
-Method: GCV   Optimizer: magic
-Smoothing parameter selection converged
-after 12 iterations.
-The RMS GCV score gradient at convergence
-was 1.739918e-07 .
-The Hessian was positive definite.
-Model rank =  37 / 37 
-
-Basis dimension (k) checking results. 
-Low p-value (k-index<1) may
-indicate that k is too low, especially if
-edf is close to k'.
-
-       k' edf k-index p-value
-s(x0) 9.0 2.5    1.04    0.85
-s(x1) 9.0 2.4    1.03    0.69
-s(x2) 9.0 7.7    0.97    0.28
-s(x3) 9.0 1.0    1.03    0.68
-
+> k.check(b)
+      k'      edf   k-index p-value
+s(x0)  9 2.500168 1.0448166  0.8000
+s(x1)  9 2.401079 1.0267384  0.7200
+s(x2)  9 7.697714 0.9691083  0.2300
+s(x3)  9 1.000000 1.0297794  0.7325
           \end{Rbg}
         \end{exampleblock}
-Just as it says, check the \texttt{p-value} and \texttt{k-index} columns! Double\texttt{k} if necessary.
+Just as it says, check the \texttt{p-value} and \texttt{k-index} columns! Double \texttt{k} if necessary.
 
 \end{block}
 
