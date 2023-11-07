@@ -34,6 +34,22 @@ Just as it says, check the \texttt{p-value} and \texttt{k-index} columns! Double
 
 \end{block}
 
+
+\begin{block}{\texttt{predict}}
+  \texttt{type=} argument changes the type of prediction
+  \renewcommand{\arraystretch}{1.411}\hspace{-17.5pt}
+  \begin{tabular}{>{\centering}m{0.26\linewidth} >{\centering\arraybackslash}m{0.70\linewidth}}
+  default & on the link scale\\
+  \inlc{"response"} & to put on the response scale\\
+  \inlc{"iterms"} & to give per term predictions\\
+  \inlc{"lpmatrix"} & for a prediction matrix\\
+  \end{tabular}
+  \vskip-1ex
+\end{block}
+
+
+
+
 \begin{block}{Fitting criterion \texttt{method=}}
   \renewcommand{\arraystretch}{1.411}\hspace{-17.5pt}
   \begin{tabular}{>{\centering}m{0.26\linewidth} >{\centering\arraybackslash}m{0.70\linewidth}}
