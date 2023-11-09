@@ -1,33 +1,65 @@
 % !TEX root = mgcv.tex
 
 \begin{seeblock}{Distributions}{\texttt{family=}}
-  \begin{tabular}{>{\centering}m{0.40\linewidth} >{\centering\arraybackslash}m{0.6\linewidth}}
-  Binomial         &  \texttt{binomial}\\
-  Normal         &  \texttt{gaussian}\\
-  Gamma            &  \texttt{Gamma}\\
-  Inverse normal &  \texttt{inverse.gaussian}\\
-  Poisson          &  \texttt{poisson}\\
-  Quasi            &  \texttt{quasi}\\
-  Quasi-binomial    &  \texttt{quasibinomial}\\
-  Quasi-Poisson     &  \texttt{quasipoisson}\\
-  Tweedie       &  \texttt{tw}/\texttt{Tweedie}\\
-  Negative binomial        &  \texttt{nb}/\texttt{negbin}\\
-  Beta            &  \texttt{betar}\\
-  Censored normal            &  \texttt{cnorm}\\
-  Ordered categorical             &  \texttt{ocat}\\
-  Scaled $t$             &  \texttt{scat}\\
-  Zero inflated Poisson              &  \texttt{ziP}\\
-  Zero inflated Poisson location-scale   &  \texttt{ziplss}\\
-  Cox proportional hazards & \texttt{cox.ph}\\
-  Generalized extreme value location-scale & \texttt{gevlss}\\
-  Normal location-scale model & \texttt{gaulss}\\
-  Multivariate normal & \texttt{mvn}\\
-  Gamma location-scale & \texttt{gammals}\\
-  Gumbel location-scale & \texttt{gumbls}\\
-  Multinomial & \texttt{multinom}\\
-  Tweedie location-scale & \texttt{twlss}\\
-  Sinh-arcsinh location-scale-shape & \texttt{shash}\\
-  General family               &  \texttt{gfam}
-  \end{tabular}
+
+  \begin{subblock}{Continuous}
+    \begin{tabular}{>{}m{0.45\linewidth} >{\centering\arraybackslash}m{0.55\linewidth}}
+      Normal                & \texttt{gaussian}\\
+      Multivariate normal   & \texttt{mvn}\\
+      Normal location-scale & \texttt{gaulss}\\
+      Scaled $t$            & \texttt{scat}\\
+      Inverse normal        & \texttt{inverse.gaussian}\\
+      Quasi                 & \texttt{quasi}\\
+    \end{tabular}
+  \end{subblock}
+
+  \begin{subblock}{Discrete}
+    \begin{tabular}{>{}m{0.45\linewidth} >{\centering\arraybackslash}m{0.55\linewidth}}
+      Binomial            & \texttt{binomial}\\
+      Quasi-binomial      & \texttt{quasibinomial}\\
+      Ordered categorical & \texttt{ocat}\\
+      Multinomial         & \texttt{multinom}\\
+    \end{tabular}
+  \end{subblock}
+
+  \begin{subblock}{Count}
+    \begin{tabular}{>{}m{0.45\linewidth} >{\centering\arraybackslash}m{0.55\linewidth}}
+      Poisson                              & \texttt{poisson}\\
+      Quasi-Poisson                        & \texttt{quasipoisson}\\
+      Tweedie                              & \texttt{tw} or \texttt{Tweedie}\\
+      Tweedie location-scale               & \texttt{twlss}\\
+      Negative binomial                    & \texttt{nb} or \texttt{negbin}\\
+      Zero inflated Poisson                & \texttt{ziP}\\
+      Zero inflated Poisson location-scale & \texttt{ziplss}\\
+    \end{tabular}
+    \vskip-1ex
+  \end{subblock}
+
+  \begin{subblock}{Range constrained}
+    \begin{tabular}{>{}m{0.45\linewidth} >{\centering\arraybackslash}m{0.55\linewidth}}
+      Beta                 & \texttt{betar}\\
+      Gamma                & \texttt{Gamma}\\
+      Gamma location-scale & \texttt{gammals}\\
+      Censored normal      & \texttt{cnorm}\\
+    \end{tabular}
+    \vskip-1ex
+  \end{subblock}
+
+  \begin{subblock}{Extremes}
+    \begin{tabular}{>{}m{0.45\linewidth} >{\centering\arraybackslash}m{0.55\linewidth}}
+      Generalized extreme value location-scale & \texttt{gevlss}\\
+      Gumbel location-scale                    & \texttt{gumbls}\\
+    \end{tabular}
+    \vskip-1ex
+  \end{subblock}
+
+  \begin{subblock}{Misc}
+    \begin{tabular}{>{}m{0.6\linewidth} >{\centering\arraybackslash}m{0.4\linewidth}}
+      Cox proportional hazards          & \texttt{cox.ph}\\
+      Sinh-arcsinh location-scale-shape & \texttt{shash}\\
+      General family                    &  \texttt{gfam}
+    \end{tabular}
+    \vskip-1ex
+  \end{subblock}
   \vskip-1ex
 \end{seeblock}

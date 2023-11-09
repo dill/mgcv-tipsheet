@@ -11,3 +11,5 @@ pdf("gamcheck.pdf", width=7, height=7)
 gam.check(b)
 dev.off()
 
+# check.k output needs to be included
+check.k(b)

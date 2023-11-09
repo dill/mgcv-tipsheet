@@ -15,12 +15,13 @@ s(x2)  9 7.697714 0.9691083  0.2300
 s(x3)  9 1.000000 1.0297794  0.7325
           \end{Rbg}
         \end{exampleblock}
-Just as it says, check the \texttt{p-value} and \texttt{k-index} columns! Double \texttt{k} if necessary.
+Check the \texttt{p-value}/\texttt{k-index} columns, if $<<1$ double \texttt{k}.
 
 \end{block}
 
 
-\begin{block}{\texttt{predict}}
+\begin{seeblock}{Prediction}{\texttt{predict}}
+  \texttt{unconditional=TRUE} the smoothing parameter uncertainty\\
   \texttt{type=} argument changes the type of prediction
   \renewcommand{\arraystretch}{1.411}\hspace{-17.5pt}
   \begin{tabular}{>{\centering}m{0.26\linewidth} >{\centering\arraybackslash}m{0.70\linewidth}}
@@ -30,7 +31,7 @@ Just as it says, check the \texttt{p-value} and \texttt{k-index} columns! Double
   \inlc{"lpmatrix"} & for a prediction matrix\\
   \end{tabular}
   \vskip-1ex
-\end{block}
+\end{seeblock}
 
 
 
