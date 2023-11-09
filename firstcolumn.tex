@@ -8,15 +8,16 @@
 \begin{block}{The main functions in \mgcv}
   \inline{gam}\\For fitting GAMs\br
   \inline{gamm}\\For fitting generalized additive mixed models. Can include correlation structures and performance can be better for random effects. You can specify random effects using \texttt{lme} syntax.\br
-  \inline{bam}\\For fitting big additive models. Includes some special tricks for fitting to large datasets.\br
+  \inline{bam}\\For fitting big additive models. Includes some special tricks for fitting to large datasets. (See options \texttt{discrete}, \texttt{cluster} and \texttt{nthreads}.)\br
   \vskip-1ex
 \end{block}
 
 \begin{seeblock}{Formula}{\texttt{formula=}}
   We can write a model formula in \mgcv just as we can when we use \texttt{lm} or \texttt{glm}, with some additions.\br
-  \inline{s()} is the general setup for a smooth.\br
-  \inline{te()} interaction via tensor product.\br
-  \inline{t2()} interaction via tensor product (via identity penalty matrices).\br
+  \inline{s()} is the general setup for a smooth\br
+  \inline{te()} interaction via tensor product\br
+  \inline{ti()} interaction via tensor product (ANOVA decomposition)\br
+  \inline{t2()} interaction via tensor product (via identity penalty matrices)\br
   \vskip-1ex
 \end{seeblock}
 
