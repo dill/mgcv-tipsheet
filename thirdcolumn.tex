@@ -1,14 +1,22 @@
 % !TEX root = mgcv.tex
 
 \begin{block}{Smoothers}
-Using the \texttt{bs=} argument in \texttt{s()}, \texttt{te()}, etc. Further details can be found in \texttt{?smooth.construct.*.smooth.spec}\br
+  Using the \texttt{bs=} argument in \texttt{s()}, \texttt{te()}, etc. Further details can be found in \texttt{?smooth.construct.*.smooth.spec}\br
 
-\begin{subblock}{Univariate only smoothers}
-Cubic regression splines \texttt{cr}\br
-Cubic regression splines with shrinkage \texttt{cs}\br
-B-splines \texttt{bs}\br
-P-splines \texttt{ps}\br
-\end{subblock}
+  \begin{subblock}{Univariate only smoothers}
+    \begin{columns}
+      \begin{column}{0.5\linewidth}
+        Cubic regression splines \texttt{cr}\br
+        Cubic regression splines with shrinkage \texttt{cs}\br
+        B-splines \texttt{bs}\br
+        P-splines \texttt{ps}\br
+      \end{column}
+      \begin{column}{0.5\linewidth}
+        \includegraphics[width=0.2\textwidth]{bsplines.pdf}
+      \end{column}
+    \end{columns}
+  \end{subblock}
+
   \vskip-2ex
   \begin{columns}[t]\hfill\hfill\hfill
     \begin{column}{.48\linewidth}
